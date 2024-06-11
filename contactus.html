@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Contact Us</title>
+</head>
+<script>
+  // User Validations
+function loginValidation() {
+      // Ramesh
+var uname = document.myform.username.value;
+       //Ramesh@123
+var password = document.myform.password.value;
+      if(uname==null || uname=="") {
+        alert("Name cant be blank")
+        return false;  
+     } else if (password.length<6){
+        alert("Password Must be 6 letters")
+        return false;
+     }  
+     return true                 
+  }           
+ </script>
+<style>
+    div {
+        text-align:center;
+    }
+     body {
+       
+         background-color: palegoldenrod;
+    
+         background-size: cover;
+         height: 5cm;
+     }
+     h1{
+        color:rgb(0,255,255);
+     }
+     p{
+    
+      font-size: small;
+     }
+</style>
+<div>   
+  
+<form name="myform" action="login Success.html"></form>
+<body>
+<h1>CONTACT US:</h1>
+Email :<input type="text" name="userename"><br> <br>
+Phonenumber:<input type="text" name="password"><br> <br>
+Address:<input type="text" name="userename"><br> <br>
+<button>
+    submit
+</button>
+</div>
+</body>
+</html>
